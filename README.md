@@ -5,7 +5,7 @@ Post error notifications to a Slack channel when logging.
 Copy consoleSlack.js to your working directory. 
 
 #Usage
-```
+```javascript
 var ConsoleSlack = require('./consoleSlack.js');
 var cs = new ConsoleSlack({
   'webhookURL' : '...', //Slack webhook URL
