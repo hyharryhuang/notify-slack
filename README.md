@@ -2,7 +2,7 @@
 Log to a Slack channel. Useful for server monitoring.
 
 #Installing
-Copy consoleSlack.js to your working directory. 
+Copy notifySlack.js to your working directory. 
 
 #Usage
 ```javascript
