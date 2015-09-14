@@ -1,0 +1,23 @@
+{
+  "name": "slack-server-notification",
+  "version": "1.0.0",
+  "description": "Post error notifications to a Slack channel when logging",
+  "main": "consoleSlack.js",
+  "dependencies": {
+    "request": "^2.61.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyharryhuang/slack-server-notification.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyharryhuang/slack-server-notification/issues"
+  },
+  "homepage": "https://github.com/hyharryhuang/slack-server-notification"
+}
