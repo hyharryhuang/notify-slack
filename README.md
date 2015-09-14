@@ -1,4 +1,4 @@
-# slack-server-notification
+# notifySlack
 Post error notifications to a Slack channel when logging.
 
 #Installing
@@ -6,8 +6,8 @@ Copy consoleSlack.js to your working directory.
 
 #Usage
 ```javascript
-var ConsoleSlack = require('./consoleSlack.js');
-var cs = new ConsoleSlack({
+var NotifySlack = require('./notifySlack.js');
+var ns = new NotifySlack({
   'webhookURL' : '...', //Slack webhook URL
   'defaultChannel' : '...', //Default Slack channel to post to
   'errorChannel' : '...', //(Optional) Error Slack channel to post to, for messages marked as 'error'
@@ -16,6 +16,6 @@ var cs = new ConsoleSlack({
   'userIcon' : '...', //(Optional) user icon of Slack bot when posting messages. Defaults to Slack logo.
 });
 
-cs.notify('All good.'); //post a message to the default channel in Slack. 
-cs.notify("Everything's on fire!!!", true); //post a message to the error channel in Slack (if specified, otherwise will post to the default channel). 
+ns.notify('All good.'); //post a message to the default channel in Slack. 
+ns.notify("Everything's on fire!!!", true); //post a message to the error channel in Slack (if specified, otherwise will post to the default channel). 
 ```
