@@ -1,5 +1,5 @@
 # notifySlack
-Post error notifications to a Slack channel when logging.
+Log to a Slack channel. Useful for server monitoring.
 
 #Installing
 Copy consoleSlack.js to your working directory. 
