@@ -15,7 +15,7 @@ var ConsoleSlack = function(config) {
 
 		moduleName: config['moduleName'],
 
-		username: config['username'] || 'CSBot',
+		username: config['username'] || 'NSBot',
 		userIcon: config['userIcon'] || 'https://slack.com/img/icons/app-57.png'
 	};
 
