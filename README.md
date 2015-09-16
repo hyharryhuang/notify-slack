@@ -2,7 +2,7 @@
 Log to a Slack channel. Useful for server monitoring.
 
 #Installing
-npm install notify-slack
+```npm install notify-slack```
 
 #Usage
 ```javascript
