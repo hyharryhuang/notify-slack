@@ -12,11 +12,12 @@ var ConsoleSlack = function(config) {
 		defaultChannel: config['defaultChannel'],
 		errorChannel: config['errorChannel'],
 
-
 		moduleName: config['moduleName'],
 
 		username: config['username'] || 'NSBot',
-		userIcon: config['userIcon'] || 'https://slack.com/img/icons/app-57.png'
+		userIcon: config['userIcon'] || 'https://slack.com/img/icons/app-57.png',
+
+		log: config['log'] || false,
 	};
 
 	self.config = configSettings;
@@ -43,10 +44,11 @@ function notify(toLog, error) {
 	var self = this;
 
 	if (toLog) {
-		log(Date() + ': ' + toLog);
+		if(self.config['log'] || false)
+			log(Date() + ': ' + toLog);
+		
 		self._sendSlackMessage(toLog, error);
-	} else
-		log('');
+	}
 }
 
 function _sendSlackMessage(message, error) {
@@ -83,10 +85,10 @@ function _sendSlackMessage(message, error) {
 			json: bodyParams,
 		},
 		function(err, httpResponse, body) {
-			if (err)
-				console.log("ERROR! " + JSON.stringify(err));
-			else
-				console.log("RESPONSE: " + JSON.stringify(httpResponse));
+			// if (err)
+			// 	console.log("ERROR! " + JSON.stringify(err));
+			// else
+			// 	console.log("RESPONSE: " + JSON.stringify(httpResponse));
 		}
 	)
 };

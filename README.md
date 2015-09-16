@@ -14,6 +14,7 @@ var ns = new NotifySlack({
   'moduleName' : '...', //(Optional) Name will be prepended to Slack message, in order to identify which module it was referring to.
   'username' : '...', //(Optional) username of Slack bot when posting messages. Defaults to NSBot.
   'userIcon' : '...', //(Optional) user icon of Slack bot when posting messages. Defaults to Slack logo.
+  'log' : false, //(Optional) log the message sent to Slack to the console, along with a timestamp. Defaults to false. 
 });
 
 ns.notify('All good.'); //post a message to the default channel in Slack. 
